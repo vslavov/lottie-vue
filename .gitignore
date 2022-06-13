@@ -42,9 +42,6 @@ package-lock.json
 .DS_Store
 .tmp
 
-# Dist artifacts
-dist/
-
 # Tests
 coverage/
 cypress/react-testing-pages/src/components/lottie-react.js
