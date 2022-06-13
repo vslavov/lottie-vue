@@ -1,5 +1,5 @@
 {
-  "name": "@lottiefiles/vue-lottie-player",
+  "name": "vue-lottie-player-stoponlastframe",
   "version": "1.0.8",
   "description": "Lottie player wrapper for Vue.js by LottieFiles",
   "scripts": {
