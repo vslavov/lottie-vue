@@ -1,5 +1,7 @@
 This component has been modified to include an option to stop at the last frame of an animation when not looping. The behaviour of the original component is to reset to the first frame.
 
+Original package: https://www.npmjs.com/package/@lottiefiles/vue-lottie-player
+
 ## LottiePlayer Vue Component
 
 This is a Vue component for the Lottie Web Player. This library is a vue wrapper around the LottieFiles Lottie Web Player
@@ -11,13 +13,13 @@ This is a Vue component for the Lottie Web Player. This library is a vue wrapper
 1. Install package using npm or yarn.
 
 ```shell
-npm install --save @lottiefiles/vue-lottie-player
+npm i vue-lottie-player-stoponlastframe
 ```
 
 2. Import package in your code.
 
 ```javascript
-import LottieVuePlayer from "@lottiefiles/vue-lottie-player";
+import LottieVuePlayer from "vue-lottie-player-stoponlastframe";
 ```
 
 3. Add the player as a plugin to Vue
@@ -30,7 +32,7 @@ Vue.use(LottieVuePlayer);
 1. Install package using npm or yarn.
 
 ```shell
-npm install --save @lottiefiles/vue-lottie-player
+npm i vue-lottie-player-stoponlastframe
 ```
 
 2. Create a folder called 'plugins' at the root of your project
@@ -43,7 +45,7 @@ npm install --save @lottiefiles/vue-lottie-player
 
 import Vue from 'vue';
 
-import LottieVuePlayer from "@lottiefiles/vue-lottie-player";
+import LottieVuePlayer from "vue-lottie-player-stoponlastframe";
 
 Vue.use(LottieVuePlayer);
 
@@ -188,36 +190,6 @@ set background color.
 
 Type: `void`
 
-## Contributing
-
-We use changesets to maintain a changelog for this repository. When making any change to the codebase that impacts functionality or performance we require a changeset to be present.
-
-To add a changeset run:
-
-```
-yarn run changeset
-```
-
-And select the type of version bump you'd like (major, minor, path).
-
-You can document the change in detail and format it properly using Markdown by opening the ".md" file that the "yarn changeset" command created in the ".changeset" folder. Open the file, it should look something like this:
-
-```
----
-"@lottiefiles/pkg1": minor
-"@lottiefiles/pkg2": major
----
-
-This is where you document your **changes** using Markdown.
-
-- You can write
-- However you'd like
-- In as much detail as you'd like
-
-Aim to provide enough details so that team mates and future you can understand the changes and the context of the change.
-```
-
-You can commit your changes and the changeset to your branch and then create a pull request on the develop branch.
 ## License
 
 MIT License © LottieFiles.com
