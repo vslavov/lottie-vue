@@ -19,9 +19,6 @@
     "url": "git+https://github.com/LottieFiles/lottie-vue.git"
   },
   "main": "dist/vue-lottie-player.common.js",
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "@lottiefiles/lottie-player": "^1.5.7",
     "vue": "^2.6.12"
