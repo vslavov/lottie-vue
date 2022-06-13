@@ -1,3 +1,5 @@
+This component has been modified to include an option to stop at the last frame of an animation when not looping. The behaviour of the original component is to reset to the first frame.
+
 ## LottiePlayer Vue Component
 
 This is a Vue component for the Lottie Web Player. This library is a vue wrapper around the LottieFiles Lottie Web Player
@@ -118,17 +120,18 @@ Add the element `lottie-vue-player` and set the `src` prop to a URL pointing to 
 
 ## Props
 
-| Prop                 | Description                                                            | Type               | Default     |
-| -------------------- | ---------------------------------------------------------------------- | ------------------ | ----------- |
-| `autoplay`           | Autoplay animation on load.                                            | `boolean`          | `false`     |
-| `backgroundColor`    | Background color.                                                      | `string`           | `undefined` |
-| `playerControls`     | Show controls.                                                         | `boolean`          | `false`     |
-| `showColorPicker`    | Show color picker                                                      | `boolean`          | `false`     |
-| `playerSize`         | Player set size  (hide, minimal, standard)                             | `string`           | `standard`  |
-| `loop`               | Whether to loop animation.                                             | `boolean`          | `false`     |
-| `speed`              | Animation speed.                                                       | `number`           | `1`         |
-| `style`              | The style for the container.                                           | `object`           | `undefined` |
-| `src` _(required)_   | Bodymovin JSON data or URL to JSON.                                    | `object` | `string`| `undefined` |
+| Prop                 | Description                                                                              | Type               | Default     |
+| -------------------- |------------------------------------------------------------------------------------------| ------------------ | ----------- |
+| `autoplay`           | Autoplay animation on load.                                                              | `boolean`          | `false`     |
+| `backgroundColor`    | Background color.                                                                        | `string`           | `undefined` |
+| `playerControls`     | Show controls.                                                                           | `boolean`          | `false`     |
+| `showColorPicker`    | Show color picker                                                                        | `boolean`          | `false`     |
+| `playerSize`         | Player set size  (hide, minimal, standard)                                               | `string`           | `standard`  |
+| `loop`               | Whether to loop animation.                                                               | `boolean`          | `false`     |
+| `stopOnLastFrame`    | Whether to stop the animation on its last frame. Only applicable when `loop` is `false`. | `boolean`          | `false`     |
+| `speed`              | Animation speed.                                                                         | `number`           | `1`         |
+| `style`              | The style for the container.                                                             | `object`           | `undefined` |
+| `src` _(required)_   | Bodymovin JSON data or URL to JSON.                                                      | `object` | `string`| `undefined` |
 
 ## Methods
 

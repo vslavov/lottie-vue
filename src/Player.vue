@@ -57,6 +57,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    stopOnLastFrame: {
+      type: Boolean,
+      default: false
+    },
     mode: {
       type: String,
       default: "normal",
@@ -182,7 +186,14 @@ export default {
     this.player.addEventListener(
       "complete",
       function () {
-        this.stop();
+        if(!this.loop && this.stopOnLastFrame) {
+          const lottie = this.getLottie()
+          this.player.seek(lottie.totalFrames - 1)
+          lottie.pause()
+          this.options.playing = false;
+        } else {
+          this.stop();
+        }
       }.bind(this)
     );
     this.options.backgroundColor = this.backgroundColor;
